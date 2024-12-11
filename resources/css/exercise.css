@@ -1,0 +1,138 @@
+.logout {
+    background: var(--dark_red_color);
+    color: white;
+    transition: var(--transition-1);
+}
+
+.logout:hover {
+    background: var(--green_color);
+}
+
+.add_course {
+    background: var(--green_color);
+    color: white;
+    transition: var(--transition-1);
+}
+
+.add_course:hover {
+    background: var(--dark_green_color);
+}
+
+
+thead {
+    background: var(--gray_color);
+    border-radius: 30px 30px 0 0;
+    color: white;
+}
+thead td {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+thead td:nth-child(odd) {
+    background: var(--dark_gray_color);
+}
+
+thead td:first-child {
+    width: 100px;
+}
+
+thead td:nth-child(2) {
+    width: 200px;
+}
+
+thead td:nth-child(3) {
+    width: 300px;
+}
+
+thead td:nth-child(4) {
+    width: 300px;
+}
+
+thead td:nth-child(5) {
+    width: 150px;
+}
+
+thead td:nth-child(5) {
+    width: 150px;
+}
+
+
+select {
+    appearance: none;
+    outline: none;
+}
+
+label[for="exerciseid"],
+label[for="dietid"]{
+    transform: scale(0.7);
+    top: 4px;
+    left: -12px;
+}
+
+.fa-chevron-down {
+    right: 15px;
+    top: 21px;
+}
+
+
+.exercise_wrap {
+    width: 300px;
+}
+
+table {
+    width: 1200px;
+}
+@media screen and (min-width: 475px) {
+    .exercise_wrap {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    label[for="exerciseid"]{
+        left: -10px;
+    }
+
+    label[for="dietid"] {
+        left: -6px;
+    }
+
+    .exercise_wrap {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fa-chevron-down {
+        right: 15px;
+        top: 28px;
+    }
+
+    label[for="exerciseid"]{
+        left: -8px;
+    }
+
+    label[for="dietid"] {
+        left: -3px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .exercise_wrap {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .exercise_wrap {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .exercise_wrap {
+        width: 1200px;
+    }
+}
+

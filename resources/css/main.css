@@ -1,0 +1,205 @@
+:root {
+    --gray_color: #41424B;
+    --dark_gray_color: #383941;
+    --slate_color: #CDCDCD;
+    --dark_slate_color:rgb(189, 187, 187)D;
+    --green_color: #61b152;
+    --dark_green_color: #46833c;
+    --red_color: #DB5B53;
+    --dark_red_color: #B94F48;
+    --transition-1: 0.3s cubic-bezier(.615 , .19, .305, .91);
+    --transition-2: 0.6s cubic-bezier(1, 0, .85 ,1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+
+.readex_font {
+    font-family: "Readex Pro"
+}
+.f_gray {
+    color: var(--gray_color);
+}
+
+.f_red {
+    color: var(--red_color);
+}
+
+input {
+    border: 1px solid var(--slate_color);
+    outline: none;
+}
+
+select {
+    border: 1px solid var(--slate_color);
+}
+
+button[type="submit"] {
+    background: var(--red_color);
+    transition: var(--transition-1);
+}
+
+button[type="submit"]:hover {
+    background: var(--dark_red_color);
+}
+
+td {
+    padding: 8px;
+    text-indent: 4px;
+}
+
+tr:hover {
+    z-index: 100;
+    background: var(--dark_slate_color);
+}
+
+tbody tr:nth-child(n+1) {
+    background: white;
+}
+
+.fa-solid {
+    transition: var(--transition-1);
+}
+
+.menu_bar {
+    background: white;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 90px 100px;
+}
+
+.menu_items p {
+    font-size: 0.6rem;
+}
+
+.menubar_wrap {
+    height: 90vh;
+}
+
+.menu_items {
+    width: 70px;
+}
+
+.menu_bar_lg {
+    background: white;
+    bottom: 0;;
+    width: 30%;
+    max-width: 200px;
+    left: 0;
+    border-radius: 0px 20px 0 0;
+    box-shadow: -10px 30px 100px #00000011;
+}
+
+.register_btt {
+    max-width: 450px;
+}
+
+.add_btt {
+    max-width: 450px;
+}
+
+i, p {
+    transition: var(--transition-1);
+}
+
+.line {
+    background: var(--slate_color);
+    width: 80%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menu_items_lg:hover i,
+.menu_items_lg:hover p {
+    color: var(--red_color);
+}
+
+.backtoCourse {
+    max-width: 425px;
+}
+
+.add_btt button[type="submit"] {
+    background: var(--green_color);
+    transition: var(--transition-1);
+}
+
+.add_btt button[type="submit"]:hover {
+    background: var(--dark_green_color);
+}
+
+@media screen and (min-width: 1024px) {
+    .display_content {
+        max-width: 600px;
+    }
+
+    .register_btt {
+        max-width: 300px;
+    }
+
+    .add_btt {
+        max-width: 48%;
+    }
+
+    .backtoCourse {
+        max-width: none;
+        width: 95% !important;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .display_content {
+        max-width: 750px;
+    }
+
+    .register_btt {
+        max-width: 367px;
+    }
+
+    .add_btt {
+        max-width: 49%;
+    }
+
+    .backtoCourse {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .display_content {
+        max-width: 1000px;
+    }
+
+    .register_btt {
+        max-width: 417px;
+    }
+
+    .add_btt {
+        max-width: 442px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .display_content {
+        max-width: 1400px;
+    }
+
+    .register_btt {
+        max-width: 417px;
+    }
+}
+
+
+tr {
+    padding: 15px !important;
+    border-bottom: 1px solid var(--slate_color);
+}

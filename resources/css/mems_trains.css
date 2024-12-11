@@ -1,0 +1,145 @@
+.logout {
+    background: var(--dark_red_color);
+    color: white;
+    transition: var(--transition-1);
+}
+
+.logout:hover {
+    background: var(--green_color);
+}
+
+.add_course {
+    background: var(--green_color);
+    color: white;
+    transition: var(--transition-1);
+}
+
+.add_course:hover {
+    background: var(--dark_green_color);
+}
+
+table {
+    width: 2200px;
+}
+
+thead {
+    background: var(--gray_color);
+    border-radius: 30px 30px 0 0;
+    color: white;
+}
+thead td {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+thead td:nth-child(odd) {
+    background: var(--dark_gray_color);
+}
+
+thead td:first-child {
+    width: 125px;
+}
+thead td:nth-child(2) {
+    width: 150px;
+}
+
+thead td:nth-child(3) {
+    width: 250px;
+}
+
+thead td:nth-child(4) {
+    width: 250px;
+}
+
+thead td:nth-child(5) {
+    width: 150px;
+}
+
+thead td:nth-child(6) {
+    width: 150px;
+}
+
+thead td:nth-child(7) {
+    width: 150px;
+}
+
+thead td:nth-child(8) {
+    width: 150px;
+}
+
+thead td:nth-child(9) {
+    width: 200px;
+}
+
+thead td:nth-child(10) {
+    width: 200px;
+}
+
+thead td:nth-child(11) {
+    width: 200px;
+}
+
+thead td:nth-child(12) {
+    width: 200px;
+}
+
+select {
+    appearance: none;
+    outline: none;
+}
+
+label[for="exerciseid"],
+label[for="dietid"]{
+    transform: scale(0.7);
+    top: 4px;
+    left: -12px;
+}
+
+label[for="sex"],
+label[for="sex"],
+label[for="sex"] {
+    transform: scale(0.75);
+    top: 3px;
+    left: 0px;
+}
+
+.display_mems_trains {
+    max-width: 450px;
+}
+
+.fa-chevron-down {
+    right: 15px;
+    top: 21px;
+}
+
+@media screen and (min-width: 640px) {
+    label[for="exerciseid"]{
+        left: -10px;
+    }
+
+    label[for="dietid"] {
+        left: -6px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fa-chevron-down {
+        right: 15px;
+        top: 28px;
+    }
+
+    label[for="exerciseid"]{
+        left: -8px;
+    }
+
+    label[for="dietid"] {
+        left: -3px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .display_mems_trains {
+        max-width: 1040px;
+    }
+}
+

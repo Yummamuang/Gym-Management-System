@@ -1,0 +1,192 @@
+.grid-items:nth-child(1) {
+    background: var(--gray_color);
+}
+
+.grid:hover .col-span-3  {
+    background: rgb(248, 250, 252);
+    transition: var(--transition-1);
+}
+
+.grid:hover input  {
+    background: rgb(248, 250, 252);
+    transition: var(--transition-1);
+}
+
+.section {
+    height: 100vh;
+}
+
+input {
+    max-width: 447px;
+}
+
+button {
+    max-width: 450px;
+}
+
+label {
+    max-width: 450px;
+    min-width: 130px;
+    transition: var(--transition-1);
+    left: 6px;
+    top: 30%;
+    opacity: 0.9;
+}
+
+
+input:not(:placeholder-shown) ~ label, input:focus ~ label, input:not(:empty) ~ label{
+    transform: scale(0.75);
+    top: 3px;
+    left: -7px;
+}
+
+input:not(:placeholder-shown) ~ label[for="username"],
+input:focus ~ label[for="username"],
+input:not(:empty) ~ label[for="username"] {
+    transform: scale(0.75);
+    top: 3px;
+    left: -10px;
+}
+
+.input_not_empty {
+    transform: scale(0.75);
+    top: 3px;
+    left: 1px;
+}
+
+.go_to_login {
+    display: block;
+    background: var(--red_color);
+    transition: var(--transition-1);
+    min-width: 250px;
+}
+
+.go_to_login:hover {
+    display: block;
+    background: var(--dark_red_color);
+}
+
+.logout {
+    background: var(--dark_red_color);
+    color: white;
+    transition: var(--transition-1);
+}
+
+.logout:hover {
+    background: var(--green_color);
+}
+
+.logout_wrap {
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.profile_pic {
+    top: 50%;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+#profile_pic_btt {
+    bottom: 18px;
+    left: 25px;
+}
+
+input[type="file"] {
+    height: 150px;
+    background: white;
+}
+
+input[type="file"]::file-selector-button {
+    color: var(--red_color);
+    padding: 0.5em;
+    border: thin solid grey;
+    border-radius: 3px;
+    background: white;
+    transition: var(--transition-1);
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: var(--green_color);
+    color: white;
+}
+
+
+@media (min-width: 475px) {
+    .go_to_login {
+        min-width: 320px;
+    }
+
+}
+@media (min-width: 640px) {
+    label {
+        left: 5px;
+    }
+
+    input:not(:placeholder-shown) ~ label, input:focus ~ label, input:not(:empty) ~ label{
+        left: 0px;
+    }
+
+    input:not(:placeholder-shown) ~ label[for="username"],
+    input:focus ~ label[for="username"],
+    input:not(:empty) ~ label[for="username"] {
+        transform: scale(0.75);
+        top: 3px;
+        left: -5px;
+    }
+
+    .go_to_login {
+        min-width: 400px;
+    }
+
+    .logout_wrap {
+        width: 100%;
+        padding-right: 3rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    label {
+        top: 30%;
+        left: 18px;
+    }
+
+    input:not(:placeholder-shown) ~ label, input:focus ~ label, input:not(:empty) ~ label{
+        left: 3px;
+    }
+
+    .logout_wrap {
+        width: 100%;
+        padding-right: 4rem;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    label[for="username"] {
+        top: 29%;
+    }
+
+    .go_to_login {
+        min-width: 490px;
+        max-width: 500px;
+    }
+
+    .profile_pic {
+        top: 20%;
+        right: 30px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
